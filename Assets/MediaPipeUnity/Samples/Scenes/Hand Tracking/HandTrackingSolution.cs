@@ -107,14 +107,7 @@ namespace Mediapipe.Unity.HandTracking
           inputTensor[0, 0, i, 0] = (float)hand[i].X;
           inputTensor[0, 0, i, 1] = (float)hand[i].Y;
           inputTensor[0, 0, i, 2] = (float)hand[i].Z;
-          //{
-          //  handposition[0] = (1 - inputTensor[0, 0, i, 0]) * 2436;
-          //  handposition[1] = (1 - inputTensor[0, 0, i, 1]) * 1370;
-          //  handposition[2] = inputTensor[0, 0, i, 2];
-          //  HandManager.Instance.handpos = handposition;
-          //}
         }
-        //print((hand[8].X, hand[8].Y, hand[8].Z));
         handmanager.handpos = new Vector3((float)hand[8].X, (float)hand[8].Y, (float)hand[8].Z);
         handmanager.finger4 = new Vector3((float)hand[4].X, (float)hand[4].Y, (float)hand[4].Z);
         handmanager.finger6 = new Vector3((float)hand[6].X, (float)hand[6].Y, (float)hand[6].Z);
