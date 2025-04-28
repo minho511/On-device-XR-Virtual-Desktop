@@ -36,16 +36,20 @@ The repository contains all related Unity project files, the deep learning hand 
     - Hand Tracking : This project actively utilizes Google's [MediaPipe](https://ai.google.dev/edge/mediapipe/solutions/guide?hl=ko) framework for hand tracking and landmark estimation.
     In particular, I made extensive use of the [MediaPipeUnityPlugin](https://github.com/homuler/MediaPipeUnityPlugin) repository, which provides a Unity plugin for MediaPipe integration.
     - Gesture Recognition : a custom model was designed and trained using `PyTorch` with a dataset collected specifically for this project.
+
         <p align="center">
         <img src="./src/fig6.png" width=600>
         <img src="./src/fig5.png" width=600>
         </p>
+
         The trained model was then exported to an `ONNX` file format.
 
         In the Unity application, the model is executed using `Barracuda` to enable real-time gesture inference on mobile devices.
+
         <p align="center">
         <img src="./src/fig3.png" width=600 style="margin-top:20px;"/>
         </p>
+
         model weights : /Assets/MyObjects/ours.onnx  
         code : /Samples/Scenes/Hand Tracking/HandTrackingSolution.cs (line 99-141)
 
@@ -63,9 +67,11 @@ The repository contains all related Unity project files, the deep learning hand 
 ---
 
 4. **Fish-eye Effect for Spatial Perception**
+
     <p align="center">
     <img src="./src/fig4.png" width=600  style="margin-left: 0px;"/>
     </p>
+    
     Since mobile device screens are inherently 2D, providing true spatial perception like that of VR devices such as Vision Pro or Meta Quest is limited.  
     To partially simulate spatial depth, a distortion-based projection technique was applied to enhance the sense of space within the application.
 
