@@ -2,6 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+.github/workflows/
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
@@ -72,3 +73,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# 무시할 필요 없는 파일
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# 나머지 Packages 폴더 안 파일 무시 (예를 들어 커스텀 패키지 복사본)
+Packages/*
+!Packages/*.json
+
