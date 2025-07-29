@@ -51,8 +51,7 @@ The repository contains all related Unity project files, the deep learning hand 
         </p>
 
         model weights : /Assets/MyObjects/ours.onnx  
-        code : /Samples/Scenes/Hand Tracking/HandTrackingSolution.cs (line 99-141)
-
+        code : /Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking/HandTrackingSolution.cs (line 99-141)
     - Gesture-Object Interaction
 
         The algorithms for handling gesture-object interaction are implemented in `Assets/MyScripts/raycast_script_hand.cs`.  
